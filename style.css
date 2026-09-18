@@ -1,1 +1,245 @@
 
+/* =====================================================
+                CAMPUSX - COMPLETE CSS
+===================================================== */
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8fc;
+    color: #29233d;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+                    TOP BAR
+===================================================== */
+
+.top-bar {
+    background: linear-gradient(90deg, #7c3aed, #ec4899, #f97316);
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+                    HEADER
+===================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 5%;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    box-shadow: 0 4px 20px rgba(80, 50, 120, 0.12);
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+
+    color: white;
+    font-size: 25px;
+
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+
+.logo-text h1 {
+    font-size: 26px;
+    color: #7c3aed;
+}
+
+.logo-text p {
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #443b5c;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ec4899;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+                    HERO
+===================================================== */
+
+.hero {
+    min-height: 650px;
+
+    padding: 80px 7%;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+    gap: 60px;
+
+    background:
+        radial-gradient(circle at top left, #fce7f3, transparent 40%),
+        radial-gradient(circle at bottom right, #ddd6fe, transparent 40%),
+        #fff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.welcome-badge {
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    background: #fce7f3;
+    color: #be185d;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #db2777,
+        #f97316
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.college-highlight {
+    font-size: 25px;
+    color: #4338ca;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    color: #ec4899;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #625a72;
+    font-size: 16px;
+    max-width: 650px;
+}
+
+
+/* ---------- HERO BUTTONS ---------- */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    color: white;
