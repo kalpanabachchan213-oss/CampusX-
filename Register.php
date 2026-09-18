@@ -1,3 +1,23 @@
+<?php
+session_start();
+
+$message = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $confirm_password = $_POST["confirm_password"];
+
+    if ($password != $confirm_password) {
+        $message = "Passwords do not match!";
+    } else {
+        $message = "Registration form submitted successfully!";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +31,13 @@
     <h1>CampusX ✅</h1>
     <h2>Create Student Account</h2>
 
-    <form action="" method="POST">
+    <?php
+    if ($message != "") {
+        echo "<p>$message</p>";
+    }
+    ?>
+
+    <form method="POST" action="">
 
         <label>Full Name:</label><br>
         <input type="text" name="name" required>
