@@ -1,1 +1,182 @@
+/* =========================================================
+   CAMPUSX - COMPLETE STYLE.CSS
+   Smart Student Learning & Campus Information Portal
+========================================================= */
 
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8fc;
+    color: #29243a;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar {
+    background: linear-gradient(
+        90deg,
+        #ff4f9a,
+        #8e5cff,
+        #00b8ff
+    );
+
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    box-shadow:
+        0 5px 20px rgba(70, 40, 100, 0.10);
+}
+
+.nav-container {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+
+    color: #7a38d4;
+
+    white-space: nowrap;
+}
+
+.logo span {
+    background: linear-gradient(
+        90deg,
+        #ff3f91,
+        #7a38d4,
+        #00a8ff
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.navbar a {
+    padding: 8px 10px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #403653;
+
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: white;
+
+    background: linear-gradient(
+        90deg,
+        #ff4f9a,
+        #8e5cff
+    );
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #ffd6ea 0,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 10%,
+            #dcd0ff
